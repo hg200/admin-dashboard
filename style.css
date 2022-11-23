@@ -7,7 +7,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: repeat(5, 1fr);
-    gap: 15px;
     background-color: #bfdbfe;
 }
 
@@ -29,7 +28,24 @@ body {
 
 .main-content {
     grid-row: 2 / -1;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
     background-color: aqua;
+}
+
+.main-content>.article {
+    background-color: black;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+}
+
+.main-content>.announcement {
+    background-color: orange;
+}
+
+.main-content>.trending {
+    background-color: green;
 }
 
 .search-bar {
