@@ -19,6 +19,9 @@ body {
 
 .sidebar {
     grid-row: 1/ -1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     background-color: #2563eb;
 }
 
@@ -42,6 +45,8 @@ ul>li {
     align-items: center;
 }
 
-.sidebar>ul {
-    justify-self: start;
+.features-nav>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
