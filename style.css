@@ -38,6 +38,16 @@ body {
     background-color: black;
     grid-column: 1 / span 1;
     grid-row: 1 / span 2;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.main-content>.article>div {
+    height: 200px;
+    width: 250px;
+    background-color: white;
 }
 
 .main-content>.announcement {
