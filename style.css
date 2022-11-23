@@ -26,3 +26,10 @@ body {
     grid-row: 2 / -1;
     background-color: aqua;
 }
+
+.search-bar {
+    width: 60%;
+    height: 20px;
+    background-color: grey;
+    border-radius: 1em;
+}
