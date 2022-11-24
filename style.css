@@ -33,6 +33,7 @@ input {
     border-radius: 1em;
     border-style: none;
     border: 1px solid blue;
+    background-color: transparent;
 }
 
 .top-left>img {
@@ -56,6 +57,11 @@ input {
     gap: 15px;
     align-items: center;
     justify-content: start;
+}
+
+.bottom-left>.name {
+    display: flex;
+    flex-direction: column;
 }
 
 .bottom-right {
@@ -99,13 +105,24 @@ input {
     grid-column: 1 / span 1;
     grid-row: 1 / span 2;
     padding: 15px;
+}
+
+.main-content>.article>.header {
+    height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.main-content>.article>.projects {
+    background-color: yellow;
+    height: 85%;
+    padding: 15px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
 }
 
-.main-content>.article>div {
-    width: 250px;
+.main-content>.article>.projects>div {
     background-color: white;
 }
 
