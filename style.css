@@ -115,10 +115,9 @@ input {
 
 .main-content>.article>.projects {
     background-color: yellow;
-    height: 85%;
-    padding: 15px;
+    height: 86%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
     gap: 15px;
 }
 
