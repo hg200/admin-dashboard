@@ -126,7 +126,22 @@ input {
 }
 
 .main-content>.announcement {
+    padding: 5px;
     background-color: orange;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.main-content>.announcement>.header {
+    height: 5%;
+}
+
+.main-content>.announcement>div {
+    height: 30%;
+    background-color: white;
+    overflow: hidden;
 }
 
 .main-content>.trending {
