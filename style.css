@@ -24,6 +24,7 @@ body {
 
 .top-left {
     display: flex;
+    padding-right: 15px;
     gap: 15px;
     align-items: center;
 }
