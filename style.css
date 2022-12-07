@@ -112,7 +112,9 @@ input {
     flex-direction: column;
     gap: 30px;
     padding: 15px;
+    padding-top: 60px;
     align-items: flex-start;
+    justify-content: space-between;
     background-color: var(--main-clr);
 }
 
@@ -125,6 +127,10 @@ input {
 
 .sidebar ul li a:hover {
     color: var(--tertiary-clr);
+}
+
+.sidebar>.features-nav {
+    margin-top: -250px;
 }
 
 .main-content {
