@@ -19,6 +19,7 @@ body {
     grid-template-columns: 1fr 5fr;
     grid-template-rows: repeat(5, 1fr);
     background-color: #bfdbfe;
+    overflow: hidden;
 }
 
 .header {
@@ -39,15 +40,17 @@ body {
 }
 
 input {
+    padding: 0 10px;
+    height: 35px;
     width: 50vw;
-    border-radius: 1em;
+    border-radius: 0.75em;
     border-style: none;
     border: 1px solid blue;
     background-color: transparent;
 }
 
 .top-left>img {
-    height: 20px;
+    height: 25px;
 }
 
 .top-right {
@@ -69,9 +72,15 @@ input {
     justify-content: start;
 }
 
+.bottom-left>.logo img {
+    height: 80px;
+    width: 80px;
+}
+
 .bottom-left>.name {
     display: flex;
     flex-direction: column;
+    line-height: 1px;
 }
 
 .bottom-right {
@@ -104,6 +113,7 @@ input {
 }
 
 .main-content {
+    padding-right: 10px;
     height: 80vh;
     grid-row: 2 / -1;
     display: grid;
@@ -128,9 +138,9 @@ input {
     font-weight: 600;
 }
 
-.main-content>.article>.projects {
+.main-content .article .projects {
     background-color: var(--tertiary-clr);
-    height: 60%;
+    height: 70%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
     gap: 15px;
@@ -151,6 +161,22 @@ input {
     margin: -5px;
 }
 
+.main-content>.article>.projects>div>span {
+    height: 50px;
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    margin-top: -30px;
+}
+
+.main-content>.article>.projects>div>span>img {
+    height: 20px;
+    width: 20px;
+    padding: 1px;
+    background-color: white;
+    border-radius: 30%;
+}
+
 .main-content>.announcement {
     padding: 5px;
     background-color: var(--tertiary-clr);
@@ -168,12 +194,13 @@ input {
     color: var(--accent-clr);
 }
 
-.main-content>.announcement>div {
+.main-content .announcement div {
     height: 25vh;
-    background-color: white;
+    background-color: var(--accent-clr);
     overflow: scroll;
     border-radius: 0.5em;
     padding: 0 5px;
+    border-bottom: 3px solid gray;
 }
 
 .main-content>.announcement>div>p {
@@ -183,7 +210,7 @@ input {
 .main-content>.trending {
     background-color: var(--tertiary-clr);
     height: 200px;
-    margin: -385px 5px 0 5px;
+    margin: -380px 5px 0 5px;
     grid-column: 2 / -1;
     grid-row: 2 / -1;
     border-radius: 0.5em;
@@ -206,11 +233,19 @@ input {
     align-items: center;
     padding: 0 5px;
     gap: 15px;
+    overflow: hidden;
 }
 
 .main-content>.trending>div>img {
     height: 30px;
     width: 30px;
+}
+
+.main-content>.trending>div>div {
+    border-left: 1px solid gray;
+    padding-left: 10px;
+    padding-top: 10px;
+    line-height: 10px;
 }
 
 .logo {
