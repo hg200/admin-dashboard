@@ -22,6 +22,10 @@ body {
     overflow: hidden;
 }
 
+a {
+    text-decoration: none;
+}
+
 .header {
     padding: 15px;
     height: 20vh;
@@ -112,6 +116,13 @@ input {
     background-color: var(--main-clr);
 }
 
+.sidebar ul li a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--accent-clr);
+}
+
 .main-content {
     padding-right: 10px;
     height: 80vh;
@@ -123,7 +134,6 @@ input {
 }
 
 .main-content>.article {
-    background-color: ;
     grid-column: 1 / span 1;
     grid-row: 1 / span 2;
     padding: 15px;
